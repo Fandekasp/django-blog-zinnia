@@ -89,3 +89,7 @@ TWITTER_ACCESS_SECRET = getattr(settings, 'TWITTER_ACCESS_SECRET', '')
 USE_TWITTER = getattr(settings, 'ZINNIA_USE_TWITTER',
                       bool(TWITTER_ACCESS_KEY and TWITTER_ACCESS_SECRET and \
                            TWITTER_CONSUMER_KEY and TWITTER_CONSUMER_SECRET))
+
+# latex extension to restructuredtext
+TEX_MEDIA_URL = getattr(settings, 'TEX_MEDIA_URL',
+                        '%s/TeX/' % settings.MEDIA_URL)
